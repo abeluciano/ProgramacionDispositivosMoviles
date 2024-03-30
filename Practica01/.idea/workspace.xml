@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="082c1c9d-9cbb-4f65-9931-7e54ad9a3f20" name="Changes" comment="Acabado">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practica1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/Practica1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio01.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/src/Ejercicio01.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/src/Ejercicio02.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/src/Ejercicio03.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/src/Ejercicio04.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/src/Ejercicio05.kt" afterDir="false" />
+    <list default="true" id="082c1c9d-9cbb-4f65-9931-7e54ad9a3f20" name="Changes" comment="Acabado01">
+      <change beforePath="$PROJECT_DIR$/Practica01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica01/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +56,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.Ejercicio02Kt">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\IdeaProjects\Practica1\Practica01" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\IdeaProjects\Practica1\Practica01" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.Ejercicio01Kt">
     <configuration name="Ejercicio01Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ejercicio01Kt" />
       <module name="Practica1" />
@@ -132,7 +127,7 @@
       <updated>1711038353416</updated>
       <workItem from="1711038354512" duration="672000" />
       <workItem from="1711208241511" duration="1646000" />
-      <workItem from="1711222969497" duration="4010000" />
+      <workItem from="1711222969497" duration="4081000" />
     </task>
     <task id="LOCAL-00001" summary="Creando Scripts de cada ejercicio">
       <option name="closed" value="true" />
@@ -150,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711229523428</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Acabado01">
+      <option name="closed" value="true" />
+      <created>1711230216401</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711230216401</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +162,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creando Scripts de cada ejercicio" />
     <MESSAGE value="Acabado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Acabado" />
+    <MESSAGE value="Acabado01" />
+    <option name="LAST_COMMIT_MESSAGE" value="Acabado01" />
   </component>
 </project>
