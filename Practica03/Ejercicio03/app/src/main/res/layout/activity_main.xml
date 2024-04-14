@@ -13,19 +13,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Music Title"
-        android:textSize="26sp"
         android:textColor="#000"
-        />
+        android:textSize="26sp" />
+
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="412dp"
         android:layout_marginVertical="12dp"
-        android:src="@drawable/"
-        />
-    <SeekBar
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:progress="50"
+        android:src="@drawable/bosque" />
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:layout_marginVertical="12dp"
         />
     
     <LinearLayout
@@ -33,7 +34,26 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
-        <
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_skip_previous_24"
+            android:background="@drawable/btn_bg"
+            />
+        <ImageButton
+            android:id="@+id/play_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_play_arrow_24"
+            android:layout_marginHorizontal="12dp"
+            android:background="@drawable/btn_bg"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_skip_next_24"
+            android:background="@drawable/btn_bg"
+            />
 
 
     </LinearLayout>
