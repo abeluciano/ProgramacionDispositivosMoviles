@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
-
+    var resultado:Double = 0.0
     var txtResultado:TextView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,14 +16,16 @@ class MainActivity : AppCompatActivity() {
 
         txtResultado = findViewById<TextView>(R.id.txtResultado)
     }
-
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putDouble("resultado", resultado)
+        super.onSaveInstanceState(outState)
+    }
     fun calcular(view: View) {
         var boton = view as Button
         var textoBoton = boton.text.toString()
         var concatenar = txtResultado.toString() + textoBoton
         var mostrar = quitarCerosIzquierda(concatenar)
         if(textoBoton == "="){
-            var resultado = 0.0
             try {
                 resultado = eval(txtResultado?.text.toString())
                 txtResultado?.text = resultado.toString()
