@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Ejercicio03</string>
     <string name="titulo">Music Title</string>
+    <string name="Seleccionar">Seleccionar</string>
 </resources>

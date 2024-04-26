@@ -1,61 +1,40 @@
 package com.example.ejercicio03
 
+
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.os.Handler
-import android.widget.ImageButton
-import android.widget.SeekBar
-
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
 
-    lateinit var runnable: Runnable
-    private var handler = Handler()
+class MainActivity : AppCompatActivity() {
+    private lateinit var spinner: Spinner
+    private lateinit var botonSeleccionar: Button
+    private val nombresCanciones = arrayOf("Creep - Radiohead", "Ella y Él - Pedro Suarez Vertiz", "lofipop", "Snuff -  Slipknot", "Still loving you - Scorpions")
+    private val canciones = arrayOf(R.raw.creep, R.raw.ella_y_el, R.raw.music, R.raw.snuff, R.raw.still_loving_you)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val play_btn = findViewById<ImageButton>(R.id.play_btn)
-        val seekbar = findViewById<SeekBar>(R.id.seekbar)
+        spinner = findViewById<Spinner>(R.id.spinner)
+        botonSeleccionar = findViewById<Button>(R.id.btn_seleccion)
 
-        val mediaPlayer = MediaPlayer.create(this,R.raw.music)
+        val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, nombresCanciones)
+        spinner.adapter = adaptador
 
-        seekbar.progress = 0
-        seekbar.max = mediaPlayer.duration
-
-        play_btn.setOnClickListener {
-
-            if(!mediaPlayer.isPlaying){
-                mediaPlayer.start()
-                play_btn.setImageResource(R.drawable.baseline_pause_24)
-            }else{
-                mediaPlayer.pause()
-                play_btn.setImageResource(R.drawable.baseline_play_arrow_24)
-            }
-        }
-        seekbar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
-            override fun onProgressChanged(p0: SeekBar?, pos: Int, changed:Boolean) {
-                if(changed){
-                    mediaPlayer.seekTo(pos)
+        botonSeleccionar.setOnClickListener {
+            val posicion = spinner.selectedItemPosition
+            val mediaPlayer = MediaPlayer.create(this, canciones[posicion])
+            val intent = Intent(this, MainActivity2::class.java).apply {
+                if (!mediaPlayer.isPlaying) {
+                    mediaPlayer.start()
                 }
+                putExtra("cancionSeleccionada", canciones[posicion])
             }
-            override fun onStartTrackingTouch(p0: SeekBar?) {
-            }
-
-            override fun onStopTrackingTouch(p0: SeekBar?) {
-            }
-        })
-
-        runnable = Runnable {
-            seekbar.progress=mediaPlayer.currentPosition
-            handler.postDelayed(runnable, 10000)
-        }
-        handler.postDelayed(runnable, 10000)
-
-        mediaPlayer.setOnCompletionListener {
-            play_btn.setImageResource(R.drawable.baseline_play_arrow_24)
-            seekbar.progress= 0
+            startActivity(intent)
         }
     }
 }
