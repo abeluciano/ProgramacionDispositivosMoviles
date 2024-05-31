@@ -14,7 +14,7 @@ class UsersViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
     val viewEmail = itemView.findViewById<TextView>(R.id.txtEmail)
     val viewAge = itemView.findViewById<TextView>(R.id.txtAge)
     val btnDelete = itemView.findViewById<Button>(R.id.btnDelete)
-    
+
     fun render(item:User, l:OnClickListener, onClickListener: (User) -> Unit) {
         viewName.text = item.name
         viewEmail.text = item.email
